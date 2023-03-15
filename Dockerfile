@@ -1,4 +1,4 @@
-FROM golang:1.18.2-alpine
+FROM public.ecr.aws/docker/library/golang:1.20
 WORKDIR /app
 COPY . .
 RUN go mod download
