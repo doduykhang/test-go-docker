@@ -1,4 +1,3 @@
 #! /bin/bash
 
-docker stop app
-docker rm app
+docker stop app || true && docker rm app || true
