@@ -1,3 +1,3 @@
 #! /bin/bash
 
-docker stop app || true && docker rm app || true
+docker rm -f app 2> /dev/null
