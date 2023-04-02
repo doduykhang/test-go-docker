@@ -14,6 +14,6 @@ func main() {
 	      r.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		            w.Write([]byte("welcome 5"))
 	      })
-        fmt.Println("Server running at port 3000")
-	      http.ListenAndServe(":3000", r)
+        fmt.Println("Server running at port 80")
+        http.ListenAndServe(":80", r)
 }
